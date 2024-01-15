@@ -7,6 +7,8 @@
    - 原始檔案 - https://cdnjs.cloudflare.com/ajax/libs/tocas/4.2.5/tocas.css
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&display=swap');
+
 /**
  * Document -> ri
  *
@@ -84,7 +86,7 @@ ri input::-webkit-date-and-time-value {
   * Button
   */
 
-  ri button {
+ri button {
     border: none;
     margin: 0;
     padding: 0;
