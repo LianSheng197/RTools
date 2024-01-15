@@ -8476,7 +8476,7 @@ ri button {
 
 @font-face {
     font-family: "Icons";
-    src: url("https://github.com/FortAwesome/font-awesome-sass/raw/master/assets/fonts/font-awesome/fa-solid-900.woff2") format("woff2"), url("https://github.com/FortAwesome/font-awesome-sass/raw/master/assets/fonts/font-awesome/fa-solid-900.ttf") format("truetype");
+    src: url("https://raw.githubusercontent.com/FortAwesome/font-awesome-sass/master/assets/fonts/font-awesome/fa-solid-900.woff2") format("woff2"), url("https://raw.githubusercontent.com/FortAwesome/font-awesome-sass/master/assets/fonts/font-awesome/fa-solid-900.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -8486,7 +8486,7 @@ ri button {
 
 @font-face {
     font-family: "IconsBrands";
-    src: url("https://github.com/FortAwesome/font-awesome-sass/raw/master/assets/fonts/font-awesome/fa-brands-400.woff2") format("woff2"), url("https://github.com/FortAwesome/font-awesome-sass/raw/master/assets/fonts/font-awesome/fa-brands-400.ttf") format("truetype");
+    src: url("https://raw.githubusercontent.com/FortAwesome/font-awesome-sass/master/assets/fonts/font-awesome/fa-brands-400.woff2") format("woff2"), url("https://raw.githubusercontent.com/FortAwesome/font-awesome-sass/master/assets/fonts/font-awesome/fa-brands-400.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -8496,7 +8496,7 @@ ri button {
 
 @font-face {
     font-family: "IconsRegular";
-    src: url("https://github.com/FortAwesome/font-awesome-sass/raw/master/assets/fonts/font-awesome/fa-regular-400.woff2") format("woff2"), url("https://github.com/FortAwesome/font-awesome-sass/raw/master/assets/fonts/font-awesome/fa-regular-400.ttf") format("truetype");
+    src: url("https://raw.githubusercontent.com/FortAwesome/font-awesome-sass/master/assets/fonts/font-awesome/fa-regular-400.woff2") format("woff2"), url("https://raw.githubusercontent.com/FortAwesome/font-awesome-sass/master/assets/fonts/font-awesome/fa-regular-400.ttf") format("truetype");
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
