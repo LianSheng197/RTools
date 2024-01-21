@@ -1,5 +1,16 @@
-// ================ [core.user.js (v1.18.0-20240121d1)] ================ //
+// ================ [core.user.js (v1.18.0-20240121d2)] ================ //
 class RRToolCoreInterface {
+    /** @type {string} */
+    #id;
+    /** @type {string} */
+    #name;
+    /** @type {HTMLDivElement} */
+    #root;
+    /** @type {HTMLDivElement} */
+    #tag;
+    /** @type {boolean} */
+    #isLast = false;
+
     /**
      * @param {string} id 此工具的唯一識別值（僅接受以下字元 `A-Z`、`a-z`、`0-9`、`_`、`-`）
      * @param {string} name 工具名稱，僅供人識別，可重複
@@ -23,50 +34,34 @@ class RRToolCoreInterface {
     getToolId() { }
 
     /**
-     * 在書籤上追加點擊事件監聽器
-     * @param {CallableFunction} handler
-     */
-    addTagClickEventListener(handler) { }
-
-    /**
-     * 在書籤上刪除點擊事件監聽器
-     * @param {CallableFunction} handler
-     */
-    removeTagClickEventListener(handler) { }
-
-    /**
-     * 取得書籤順序
-     */
-    getTagOrder() { }
-
-    /**
      * 設定書籤順序
      * @param {number} order
      */
     setTagOrder(order) { }
 
     /**
-     * 取得書籤顏色
+     * 點擊書籤時開關浮窗
      */
-    getTagColor() { }
+    #toggle() { }
 
     /**
-     * 保存書籤排序設定
-     * @param {number} value
+     * 讀取書籤設定（順序與顏色）
+     * @param {string} id
+     * @returns {EachSetting}
      */
-    saveTagOrder(value) { }
+    #readTagSetting(id) { }
 
     /**
-     * 保存書籤顏色設定
-     * @param {string} value 
+     * 重新排序所有已註冊的工具
      */
-    saveTagColor(value) { }
+    #reorderTags() { }
 
     /**
-     * 確認此工具是否可以排序
-     * @returns {boolean}
+     * 從已註冊的工具陣列中確認是否存在 id 衝突
+     * @param {string} id 
+     * @returns 
      */
-    isSortable() { }
+    #checkIdConflict(id) { }
 }
 
 /**
