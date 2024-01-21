@@ -1,18 +1,4 @@
-// ================ [core.user.js (v1.18.0-20240121d0)] ================ //
-
-/**
- * @typedef EachSetting
- * @property {string} id
- * @property {string} color
- * @property {number} order
- */
-
-/**
- * @typedef CoreSetting
- * @property {EachSetting[]} order
- * @property {EachSetting} last
- */
-
+// ================ [core.user.js (v1.18.0-20240121d1)] ================ //
 class RRToolCoreInterface {
     /**
      * @param {string} id 此工具的唯一識別值（僅接受以下字元 `A-Z`、`a-z`、`0-9`、`_`、`-`）
