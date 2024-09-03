@@ -1,4 +1,3 @@
-
     // ==UserScript==
     // @author        jaiperdu@kai
     // @name          IITC plugin: Player Inventory (Kaizo Version)
