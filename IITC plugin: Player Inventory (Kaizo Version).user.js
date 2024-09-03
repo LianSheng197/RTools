@@ -1,9 +1,9 @@
 
     // ==UserScript==
     // @author        jaiperdu@kai
-    // @name          IITC plugin: Player Inventory <改>
+    // @name          IITC plugin: Player Inventory (Kaizo Version)
     // @category      Info
-    // @version       0.4.4-kai
+    // @version       0.4.4.001
     // @description   View inventory and highlight portals with keys at any zoom. Can be used with the official plugins Keys and Keys on map to show the number of keys on the map.
     // @id            player-inventory
     // @namespace     https://github.com/IITC-CE/ingress-intel-total-conversion
