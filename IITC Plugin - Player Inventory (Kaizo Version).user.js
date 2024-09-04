@@ -2,7 +2,7 @@
 // @author        jaiperdu@kai
 // @name          IITC plugin: Player Inventory 改
 // @category      Info
-// @version       0.4.4.004
+// @version       0.4.4.005
 // @description   View inventory and highlight portals with keys at any zoom. Can be used with the official plugins Keys and Keys on map to show the number of keys on the map.
 // @id            player-inventory-kaizo-version
 // @namespace     https://github.com/IITC-CE/ingress-intel-total-conversion
@@ -17,7 +17,7 @@ function wrapper(plugin_info) {
     if (typeof window.plugin !== 'function') window.plugin = function () { };
 
     const playerInventory = {};
-    window.plugin.playerInventory = playerInventory;
+    window.plugin.playerInventory = playerInventory;    
 
     let itemsMap = null;
 
@@ -674,6 +674,13 @@ function wrapper(plugin_info) {
         if (playerInventory.settings.lvlColorEnable) {
             window.COLORS_LVL.forEach((c, i) => {
                 colorStyle += `.level_L${i}{ color: ${c} }`;
+
+                if(i === 7) {
+                    colorStyle += `.level_7 { background-color: #f006 }`;
+                }
+                if(i === 8) {
+                    colorStyle += `.level_8 { background-color: #f009 }`;
+                }
             });
             for (const r in window.COLORS_MOD) {
                 colorStyle += `.rarity_${shortenRarity(r)} { color: ${window.COLORS_MOD[r]} }`;
@@ -702,13 +709,13 @@ function wrapper(plugin_info) {
         clearTimeout(playerInventory.autoRefreshTimer);
         requestInventory().then(handleInventory).catch(e => {
             if (e === 'no core') {
-                alert('You need to subscribe to C.O.R.E. to get your inventory from Intel Map.');
+                alert('您必須訂閱 C.O.R.E (俗稱月卡) 才能使用這個腳本.');
             } else {
                 if (!auto) {
                     if (e === 'empty') {
-                        alert('Inventory empty, probably hitting rate limit, try again later');
+                        alert('物品清單是空的，可能觸發了伺服器的單位時間內限制存取資料次數的上限，請稍後重試');
                     } else {
-                        alert('Inventory: Last refresh failed. ' + e);
+                        alert('更新物品清單時發生不明錯誤: ' + e);
                     }
                     autoRefresh();
                 }
@@ -844,11 +851,11 @@ function wrapper(plugin_info) {
                     children: [jsx("th", {
                         children: "能量塔鑰匙"
                     }), jsx("th", {
-                        children: "\u2302"
+                        children: "不在任何桶子裡的鑰匙"
                     }), jsx("th", {
                         children: "鑰匙桶"
                     }), jsx("th", {
-                        children: "藍桶"
+                        children: "在藍桶的鑰匙"
                     })]
                 }), jsxs("tr", {
                     children: [jsx("th", {
@@ -1175,7 +1182,7 @@ function wrapper(plugin_info) {
         const container = jsxs("div", {
             className: "container",
             children: [jsx("b", {
-                children: `物品: ${inventoryCount - keyInInventory} | 鑰匙: ${keyInInventory} | 數量: ${inventoryCount}/2500 | 鑰匙桶:${inventory.keyLockersCount}`
+                children: `非鑰匙物品: ${inventoryCount - keyInInventory} | 鑰匙: ${keyInInventory} | 物品總數: ${inventoryCount}/2500 | 鑰匙桶: ${inventory.keyLockersCount}`
             }), jsx("div", {
                 className: "sum",
                 children: jsx(AllSumTable, {
