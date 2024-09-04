@@ -4,10 +4,10 @@
     // @category      Info
     // @version       0.4.4.001
     // @description   View inventory and highlight portals with keys at any zoom. Can be used with the official plugins Keys and Keys on map to show the number of keys on the map.
-    // @id            player-inventory
+    // @id            player-inventory-kaizo-version
     // @namespace     https://github.com/IITC-CE/ingress-intel-total-conversion
-    // @updateURL     https://le-jeu.github.io/iitc-plugins/player-inventory.user.js
-    // @downloadURL   https://le-jeu.github.io/iitc-plugins/player-inventory.user.js
+    // @updateURL     https://github.com/LianSheng197/RTools/raw/side-prj/IITC%20Plugin%20-%20Player%20Inventory%20(Kaizo%20Version).user.js
+    // @downloadURL   https://github.com/LianSheng197/RTools/raw/side-prj/IITC%20Plugin%20-%20Player%20Inventory%20(Kaizo%20Version).user.js
     // @match         https://intel.ingress.com/*
     // @grant         none
     // ==/UserScript==
