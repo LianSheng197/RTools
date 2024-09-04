@@ -2,7 +2,7 @@
 // @author        jaiperdu@kai
 // @name          IITC plugin: Player Inventory 改
 // @category      Info
-// @version       0.4.4.001
+// @version       0.4.4.002
 // @description   View inventory and highlight portals with keys at any zoom. Can be used with the official plugins Keys and Keys on map to show the number of keys on the map.
 // @id            player-inventory-kaizo-version
 // @namespace     https://github.com/IITC-CE/ingress-intel-total-conversion
@@ -973,14 +973,14 @@ function wrapper(plugin_info) {
                     }), jsx("th", {
                         children: "多次入侵模組"
                     }), jsx("th", {
-                        className: "綠蝴蝶",
-                        children: "C"
+                        className: "rarity_C",
+                        children: "綠蝴蝶"
                     }), jsx("th", {
-                        className: "紫蝴蝶'",
-                        children: "R"
+                        className: "rarity_R",
+                        children: "紫蝴蝶"
                     }), jsx("th", {
-                        className: "粉蝴蝶",
-                        children: "VR"
+                        className: "rarity_VR",
+                        children: "粉蝴蝶"
                     })]
                 }), jsxs("tr", {
                     children: [jsx("th", {
